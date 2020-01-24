@@ -1,0 +1,17 @@
+$notebook: 970px;
+$tablets: 768px;
+$phones: 500px;
+
+@import "media.scss";
+@import "var.scss";
+@import "adjust.scss";
+@import "fonts.scss";
+//@import "form.scss";
+
+@import "header.scss";
+@import "nav.scss";
+
+@import "catalog.scss";
+@import "delivery.scss";
+@import "about.scss";
+@import "feedback.scss";

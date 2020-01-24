@@ -1,0 +1,66 @@
+.catalog{
+    background-color: $white;
+
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 70px 0 35px;
+    }
+}
+
+.card{
+    width: 290px;
+    margin-bottom: 35px;
+
+    &__title{
+        background-color: $blue;
+        font-size: 24px;
+        color: $white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    &__img-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $gray-card;
+        padding: 20px 0;
+    }
+
+    &__price{
+        background-color: $lightblue;
+        color: $blue;
+        font-size: 21px;
+        font-family: $lightfont;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    &__descr-title{
+        background-color: $white;
+        color: $darkgray;
+        font-size: 14px;
+        font-family: $lightfont;
+        text-transform: uppercase;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    &__descr{
+        background-color: $lightblue;
+        padding: 20px;
+        color: $darkgray;
+        font-size: 14px;
+        font-family: $lightfont;
+        position: absolute;
+        width: 290px;
+        display: none;
+    }
+
+    &:hover .card__descr{
+        display: block;
+    }
+}

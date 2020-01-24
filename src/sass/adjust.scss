@@ -1,0 +1,118 @@
+*{box-sizing: border-box;}
+
+html{
+  font-size: 14px;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'euclid', sans-serif;
+  color: $darkgray;
+  background-color: $lightgray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {list-style: none;}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 990px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @include tablets{
+    padding: 0 15px;
+  }
+
+  // &--row{
+  //   flex-direction: row;
+  //   align-items: center;
+  //   justify-content: space-between;
+
+  //   @include tablets{
+  //     flex-wrap: wrap;
+  //     justify-content: center;
+  //   }
+  // }
+
+  &--end{
+    align-items: flex-end;
+  }
+}
+
+.wrapper{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+}
+
+.maincontent{
+  height: 100%;
+  min-height: 650px;
+}
+
+.wrap{
+  display: flex;
+  align-items: center;
+}
+
+.first-title{
+  
+}
+
+.second-title{
+  background-color: $lightblue;
+  padding: 30px 0;
+  font-size: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: $blue;
+  text-align: center;
+}
+
+.third-title{
+  font-size: 36px;
+  color: $white;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.text{
+  color: $darkgray;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: $lightfont;
+  text-align: center;
+
+  &--white{
+    color: $white;
+  }
+}

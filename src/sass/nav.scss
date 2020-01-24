@@ -1,0 +1,23 @@
+.nav{
+    background-color: $blue;
+    border-bottom: 5px solid $darkblue;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    &__link{
+        color: $white;
+        font-family: $boldfont;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+
+        &:hover{
+            opacity: .8;
+        }
+    }
+}

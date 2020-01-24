@@ -1,0 +1,19 @@
+.about{
+    background: $darkblue;
+    background: radial-gradient(circle, rgba(0,168,234,1) 0%, rgba(27,117,188,1) 100%);
+    padding: 150px 0 50px;
+    position: relative;
+
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: url(../img/roset.png) center center no-repeat;
+        background-size: cover;
+        width: 252px;
+        height: 251px;
+        left: 50%;
+        margin-left: -126px;
+        top: -125px;
+    }
+}
