@@ -127,9 +127,12 @@
     }
 
     &__img{
+        width: 35px;
+        height: 35px;
 
         @include tablets{
             width: 45px;
+            height: 45px;
         }
     }
 
