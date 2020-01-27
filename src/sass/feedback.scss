@@ -2,9 +2,18 @@
     background-color: $white;
     padding-bottom: 150px;
 
+    @include tablets{
+        padding-bottom: 80px;
+    }
+
     &__item{
         max-width: 500px;
         min-width: 500px;
+
+        @include tablets{
+            max-width: 350px;
+            min-width: 350px;
+        }
     }
 
     &__header{
@@ -16,6 +25,10 @@
 
     &__avatar{
         margin-right: 20px;
+
+        @include tablets{
+            max-width: 40px;
+        }
     }
 
     &__title{
@@ -23,10 +36,21 @@
         color: $white;
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
+
+        @include tablets{
+            font-size: 22px;
+        }
     }
 
     &__star-wrap{
         margin-left: auto;
+    }
+
+    &__star{
+
+        @include tablets{
+            max-width: 15px;
+        }
     }
 
     &__descr-wrap{
@@ -66,9 +90,16 @@
         text-align: right;
         text-transform: uppercase;
     }
+
+    .swiper-container--feedback{
+
+        @include tablets{
+            margin-top: 50px;
+        }
+    }
 }
 
-.swiper-button-next, .swiper-button-next--news{
+.swiper-button-next{
     top: 120px;
 
     &:after{
@@ -81,7 +112,7 @@
     }
 }
 
-.swiper-button-prev, .swiper-button-prev--news{
+.swiper-button-prev{
     top: 120px;
 
     &:after{

@@ -1,0 +1,50 @@
+.hero{
+
+    &__item{
+        background: url(../img/hero.jpg) center center no-repeat;
+        background-size: cover;
+
+        @include tablets{
+            min-height: 425px;
+        }
+    }
+
+    .swiper-container--hero{
+        position: relative;
+
+        @include tablets{
+            min-height: 425px;
+        }
+    }
+
+    .swiper-pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-pagination-bullet{
+        background: url(../img/bullet.png) center center no-repeat;
+        background-size: cover;
+        width: 18px;
+        height: 25px;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active{
+        background: url(../img/bullet-big.png) center center no-repeat;
+        background-size: cover;
+        width: 24px;
+        height: 36px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 0 10px;
+    }
+
+    @include tablets{
+        &.padding{
+            padding-top: 95px;
+        }
+    }
+}

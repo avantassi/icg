@@ -1,0 +1,106 @@
+.news{
+
+    &__item{
+        max-width: 780px;
+        min-width: 780px;
+        display: flex;
+
+        @include tablets{
+            max-width: 350px;
+            min-width: 350px;
+            flex-direction: column;
+        }
+    }
+
+    &__img-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        padding: 0 30px;
+    }
+
+    &__descr-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        background-color: $blue;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 30px;
+        padding: 15px 10px;
+
+        @include tablets{
+            line-height: 36px;
+        }
+    }
+
+    &__descr{
+        font-size: 14px;
+        color: $darkgray;
+        font-family: $lightfont;
+        padding: 15px 10px;
+        background-color: $lightblue;
+    }
+    
+    .swiper-container--news{
+        padding: 200px 0;
+
+        @include tablets{
+            padding: 100px 0;
+        }
+    }
+
+    .swiper-button-next--news{
+        top: 320px;
+        right: 10px;
+        left: auto;
+        position: absolute;
+        cursor: pointer;
+        width: calc(var(--swiper-navigation-size)/ 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color,var(--swiper-theme-color));
+
+        &:after{
+            width: 50px;
+            height: 150px;
+            content: '';
+            position: absolute;
+            background: url(../img/arrow-r.svg) center center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .swiper-button-prev--news{
+        top: 320px;
+        left: 10px;
+        right: auto;
+        position: absolute;
+        cursor: pointer;
+        width: calc(var(--swiper-navigation-size)/ 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color,var(--swiper-theme-color));
+
+        &:after{
+            width: 50px;
+            height: 150px;
+            content: '';
+            position: absolute;
+            background: url(../img/arrow-r.svg) center center no-repeat;
+            background-size: cover;
+            transform: rotate(180deg);
+        }
+    }
+}

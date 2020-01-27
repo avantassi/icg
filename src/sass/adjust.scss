@@ -83,7 +83,30 @@ p {
 }
 
 .first-title{
-  
+  font-size: 75px;
+  line-height: 75px;
+  color: $white;
+  text-transform: uppercase;
+  position: relative;
+  padding: 150px 0 200px;
+  text-align: center;
+
+  @include tablets{
+    font-size: 48px;
+    padding-bottom: 0;
+  }
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(../img/diamond.png) center center no-repeat;
+    width: 283px;
+    height: 253px;
+    left: 50%;
+    margin-left: -140px;
+    top: 80px;
+  }
 }
 
 .second-title{

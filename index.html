@@ -22,7 +22,7 @@
                     <a href="" class="logo">
                         <img src="img/logo.png" alt="" class="logo__img">
                     </a>
-                    <div class="contacts">
+                    <div class="contacts contacts--header">
                         <div class="contacts__item">
                             <div class="contacts__title">Телефоны:</div>
                             <div class="contacts__wrap">
@@ -45,6 +45,75 @@
                         <a href="" class="social__link"><img src="img/inst.png" alt="" class="social__img"></a>
                         <a href="" class="social__link"><img src="img/fb.png" alt="" class="social__img"></a>
                     </div>
+<!-- 
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+                        <div class="nav__wrap menu__box">
+                            <a href="#about" class="nav__link menu__item">О компании</a>
+                            <a href="#catalog" class="nav__link menu__item">Каталог</a>
+                            <a href="#news" class="nav__link menu__item">Новости</a>
+                            <a href="#delivery" class="nav__link menu__item">Доставка</a>
+                            <a href="#feedback" class="nav__link menu__item">Отзывы</a>
+                            <a href="#contacts" class="nav__link menu__item">Контакты</a>
+
+                            <div class="contacts">
+                                <div class="contacts__item">
+                                    <div class="contacts__title">Телефоны:</div>
+                                    <div class="contacts__wrap">
+                                        <a href="tel:+998983000062" class="contacts__contact">+9 (989) 830-00-062</a>
+                                        <a href="tel:+998998119700" class="contacts__contact">+9 (989) 981-19-700</a>
+                                    </div>
+                                </div>
+                                <div class="contacts__item">
+                                    <div class="contacts__title">Адреса:</div>
+                                    <div class="contacts__wrap">
+                                        <div class="contacts__contact">Фархадская ярм., блок 4, маг. №3  </div>
+                                        <div class="contacts__contact">ул. Фуркат, 175  </div>
+                                        <div class="contacts__contact">ул. Камарнисо, 28</div>
+                                        <div class="contacts__contact">Гвардейский пр., 5 </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="gamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav class="menu">
+                        <ul>
+                          <li><a href="#about" class="nav__link">О компании</a></li>
+                          <li><a href="#catalog" class="nav__link">Каталог</a></li>
+                          <li><a href="#news" class="nav__link">Новости</a></li>
+                          <li><a href="#delivery" class="nav__link">Доставка</a></li>
+                          <li><a href="#feedback" class="nav__link">Отзывы</a></li>
+                          <li><a href="#contacts" class="nav__link">Контакты</a></li>
+                        </ul>
+
+                        <div class="contacts">
+                            <div class="contacts__item">
+                                <div class="contacts__title">Телефоны:</div>
+                                <div class="contacts__wrap">
+                                    <a href="tel:+998983000062" class="contacts__contact">+9 (989) 830-00-062</a>
+                                    <a href="tel:+998998119700" class="contacts__contact">+9 (989) 981-19-700</a>
+                                </div>
+                            </div>
+                            <div class="contacts__item">
+                                <div class="contacts__title">Адреса:</div>
+                                <div class="contacts__wrap">
+                                    <div class="contacts__contact">Фархадская ярм., блок 4, маг. №3  </div>
+                                    <div class="contacts__contact">ул. Фуркат, 175  </div>
+                                    <div class="contacts__contact">ул. Камарнисо, 28</div>
+                                    <div class="contacts__contact">Гвардейский пр., 5 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -53,20 +122,42 @@
             <div class="container">
                 <div class="nav__wrap">
                     <a href="#about" class="nav__link">О компании</a>
-                    <a href="" class="nav__link">Каталог</a>
-                    <a href="" class="nav__link">Новости</a>
-                    <a href="" class="nav__link">Доставка</a>
-                    <a href="" class="nav__link">Отзывы</a>
-                    <a href="" class="nav__link">Контакты</a>
+                    <a href="#catalog" class="nav__link">Каталог</a>
+                    <a href="#news" class="nav__link">Новости</a>
+                    <a href="#delivery" class="nav__link">Доставка</a>
+                    <a href="#feedback" class="nav__link">Отзывы</a>
+                    <a href="#contacts" class="nav__link">Контакты</a>
                 </div>
             </div>
         </nav>
 
         <section class="hero">
 
+            <!-- Slider main container -->
+            <div class="swiper-container--hero">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide hero__item">
+                        <h1 class="first-title">Хладагенты</h1>
+                    </div>
+
+                    <!-- Для замены фона добавить доп. класс (hero__item--2) и указать фон через css -->
+                    <div class="swiper-slide hero__item"> 
+                        <div class="first-title">Хладагенты 2</div>
+                    </div>
+                    <div class="swiper-slide hero__item">
+                        <div class="first-title">Хладагенты 3</div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
         </section>
 
-        <section class="catalog">
+        <section class="catalog" id="catalog">
             <h2 class="second-title">Каталог</h2>
             <div class="container">
                 <div class="catalog__wrap">
@@ -110,7 +201,7 @@
             </div>
         </section>
 
-        <section class="delivery">
+        <section class="delivery" id="delivery">
             <h2 class="second-title">Доставка и оплата</h2>
             <div class="container">
                 <div class="delivery__wrap">
@@ -142,7 +233,7 @@
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <h2 class="second-title">Отзывы</h2>
             <div class="container container--end">
                 <div class="social social--margin">
@@ -161,7 +252,7 @@
             </div>
 
             <!-- Slider main container -->
-            <div class="swiper-container">
+            <div class="swiper-container swiper-container--feedback">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -278,7 +369,7 @@
 
         </section>
 
-        <section class="news">
+        <section class="news" id="news">
             <h2 class="second-title">Новости</h2>
 
             <div class="container">
@@ -294,38 +385,110 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide feedback__item">
-                        <div class="feedback__header">
-                            <img src="img/avatar.png" alt="" class="feedback__avatar">
-                            <div class="feedback__title">Александр К.</div>
-                            <div class="feedback__star-wrap">
-                                <img src="img/star.png" alt="" class="feedback__star">
-                                <img src="img/star.png" alt="" class="feedback__star">
-                                <img src="img/star.png" alt="" class="feedback__star">
-                                <img src="img/star.png" alt="" class="feedback__star">
-                                <img src="img/star.png" alt="" class="feedback__star">
+                    <div class="swiper-slide news__item">
+                        <div class="news__img-wrap">
+                            <img src="img/news.png" alt="" class="news__img">
+                        </div>
+                        <div class="news__descr-wrap">
+                            <div class="news__title">Заголовок новости</div>
+                            <div class="news__descr">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure sequi ipsa at ea, alias necessitatibus suscipit explicabo, inventore fuga minus distinctio. Ipsam cumque sed officiis quam, illum ratione consectetur.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolores laboriosam ad numquam cum? Ipsum assumenda magnam veniam, deleniti est unde,dicta doloribus rerum quibusdam culpa quos, illum aut quod!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea culpa hic officia qui tempore sapiente maxime, saepe nesciunt eveniet veritatis pariatur vitae magni! Dolores culpa illum, pariatur aut voluptates laboriosam.
                             </div>
                         </div>
-                        <div class="feedback__descr-wrap">
-                            <p class="feedback__descr">Супер, цены на оборудование для кондиционеров лучшие в городе.</p>
-                            <p class="feedback__descr">Покупал медную трубу для трассы кондиционера</p>
-                        </div>
-                        <div class="feedback__src">О нас на Яндекс</div>
                     </div>
-                    <div class="swiper-slide">2</div>
-                    <div class="swiper-slide">3</div>
-                    <div class="swiper-slide">4</div>
-                    <div class="swiper-slide">5</div>
+                    <div class="swiper-slide news__item">
+                        <div class="news__img-wrap">
+                            <img src="img/news.png" alt="" class="news__img">
+                        </div>
+                        <div class="news__descr-wrap">
+                            <div class="news__title">Заголовок новости 2</div>
+                            <div class="news__descr">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure sequi ipsa at ea, alias necessitatibus suscipit explicabo, inventore fuga minus distinctio. Ipsam cumque sed officiis quam, illum ratione consectetur.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolores laboriosam ad numquam cum? Ipsum assumenda magnam veniam, deleniti est unde,dicta doloribus rerum quibusdam culpa quos, illum aut quod!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea culpa hic officia qui tempore sapiente maxime, saepe nesciunt eveniet veritatis pariatur vitae magni! Dolores culpa illum, pariatur aut voluptates laboriosam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news__item">
+                        <div class="news__img-wrap">
+                            <img src="img/news.png" alt="" class="news__img">
+                        </div>
+                        <div class="news__descr-wrap">
+                            <div class="news__title">Заголовок новости 3</div>
+                            <div class="news__descr">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure sequi ipsa at ea, alias necessitatibus suscipit explicabo, inventore fuga minus distinctio. Ipsam cumque sed officiis quam, illum ratione consectetur.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolores laboriosam ad numquam cum? Ipsum assumenda magnam veniam, deleniti est unde,dicta doloribus rerum quibusdam culpa quos, illum aut quod!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea culpa hic officia qui tempore sapiente maxime, saepe nesciunt eveniet veritatis pariatur vitae magni! Dolores culpa illum, pariatur aut voluptates laboriosam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news__item">
+                        <div class="news__img-wrap">
+                            <img src="img/news.png" alt="" class="news__img">
+                        </div>
+                        <div class="news__descr-wrap">
+                            <div class="news__title">Заголовок новости 4</div>
+                            <div class="news__descr">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure sequi ipsa at ea, alias necessitatibus suscipit explicabo, inventore fuga minus distinctio. Ipsam cumque sed officiis quam, illum ratione consectetur.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolores laboriosam ad numquam cum? Ipsum assumenda magnam veniam, deleniti est unde,dicta doloribus rerum quibusdam culpa quos, illum aut quod!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea culpa hic officia qui tempore sapiente maxime, saepe nesciunt eveniet veritatis pariatur vitae magni! Dolores culpa illum, pariatur aut voluptates laboriosam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news__item">
+                        <div class="news__img-wrap">
+                            <img src="img/news.png" alt="" class="news__img">
+                        </div>
+                        <div class="news__descr-wrap">
+                            <div class="news__title">Заголовок новости 5</div>
+                            <div class="news__descr">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure sequi ipsa at ea, alias necessitatibus suscipit explicabo, inventore fuga minus distinctio. Ipsam cumque sed officiis quam, illum ratione consectetur.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolores laboriosam ad numquam cum? Ipsum assumenda magnam veniam, deleniti est unde,dicta doloribus rerum quibusdam culpa quos, illum aut quod!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea culpa hic officia qui tempore sapiente maxime, saepe nesciunt eveniet veritatis pariatur vitae magni! Dolores culpa illum, pariatur aut voluptates laboriosam.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </section>
 
         <footer class="footer">
-
+            <div class="container">
+                <div class="footer__wrap">
+                    <a href="" class="logo">
+                        <img src="img/logo-w.png" alt="" class="logo__img">
+                    </a>
+                    <div class="social">
+                        <a href="" class="social__link"><img src="img/tg-w.png" alt="" class="social__img"></a>
+                        <a href="" class="social__link"><img src="img/inst-w.png" alt="" class="social__img"></a>
+                        <a href="" class="social__link"><img src="img/fb-w.png" alt="" class="social__img"></a>
+                    </div>
+                    <div class="contacts contacts--column">
+                        <div class="contacts__item contacts__item--footer">
+                            <div class="contacts__title contacts__title--white">Телефоны:</div>
+                            <div class="contacts__wrap">
+                                <a href="tel:+998983000062" class="contacts__contact contacts__contact--white">+9 (989) 830-00-062</a>
+                                <a href="tel:+998998119700" class="contacts__contact contacts__contact--white">+9 (989) 981-19-700</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__title contacts__title--white">Адреса:</div>
+                            <div class="contacts__wrap">
+                                <div class="contacts__contact contacts__contact--white">Фархадская ярм., блок 4, маг. №3  </div>
+                                <div class="contacts__contact contacts__contact--white">ул. Фуркат, 175  </div>
+                                <div class="contacts__contact contacts__contact--white">ул. Камарнисо, 28</div>
+                                <div class="contacts__contact contacts__contact--white">Гвардейский пр., 5 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
-        <section class="adress">
+        <section class="adress" id="contacts">
             <h2 class="second-title">Адреса</h2>
         </section>
 

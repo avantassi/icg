@@ -2,6 +2,10 @@
     background-color: $blue;
     border-bottom: 5px solid $darkblue;
 
+    @include tablets{
+        display: none;
+    }
+
     &__wrap{
         display: flex;
         justify-content: space-between;
@@ -20,4 +24,97 @@
             opacity: .8;
         }
     }
+}
+
+
+.gamburger{
+
+    
+    width: 60px;/* ширина */
+    height: 60px;/* высота */
+    
+    display: none;/* выравнивание на флексбох */
+    align-items: center;
+   /* по вертикали */   justify-content: center;/* по горизонтали */
+    flex-direction: column;/* складывание полосок друг под друга */
+    cursor: pointer;
+
+    @include tablets{
+        display: flex;
+    }
+  }
+  
+  /* Стилизация полоски */ 
+  .gamburger span{
+    display: block;/* строчный элемент в блочный */
+    transition: all 0.3s;/* плавность анимации */
+    width: 60px;/* ширина полоски */
+    margin: 7px 0;/* расстояние между полосками */
+    height: 9px;/* высота полоски */
+    background-color: $blue;/* Цвет полоски */
+  }
+  
+
+ /* Вертикальное меню спрятано */
+ .menu{
+    display: flex;/* технология флексбокс */
+    align-items: center; /* выравнивание по центру */
+    justify-content: center; /* выравнивание по центру */
+    background-color: $lightgray;
+    width: 100vw; /* ширина блока меню */
+    z-index: 15;/* слой ниже кнопки */
+      position: fixed; /* блок зафиксирован */
+    left: -100vw;/* скрывание блока с меню */
+      top: 94px; /* позиция от левого верха */
+    transition: all 0.5s;/* плавное выдвижение блока */
+
+    .contacts{
+        flex-direction: column;
+        background-color: $lightblue;
+        position: absolute;
+        bottom: 94px;
+        width: 100%;
+        padding: 40px 0;
+
+        &__item{
+            flex-direction: column;
+            margin-right: 0;
+        }
+
+        &__title{
+            margin-right: 0;
+            color: $darkgray;
+            font-size: 20px;
+            line-height: 34px;
+        }
+
+        &__contact{
+            color: $darkgray;
+            font-family: $font;
+            font-size: 20px;
+            line-height: 34px;
+        }
+    }
+  }
+/* Активный класс меню видимое */
+.menu-active{
+        left: 0; /* блок с меню видимый */
+}
+/* Стилизация списка меню */
+.menu ul {
+    list-style: none; /* убрать маркеры */
+    padding: 0;
+    margin-top: 30px;
+    height: 100vh; /* блок занимает всю высоту браузера */
+}
+/* Стилизация ссылок меню */
+.menu .nav__link{
+    display: block;
+    padding: 20px;
+    color: $blue;
+    font-family: $font;
+    font-size: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
 }
